@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patitas Felices | Protegiendo vidas y buscando hogares</title>
+<meta name="description" content="Patitas Felices - Fundación de rescate y adopción de mascotas. Adopta, dona y apoya nuestra tienda solidaria.">
+<meta name="theme-color" content="#1E4E79">
+<link rel="icon" href="logo.jpg" type="image/jpeg">
+<link rel="apple-touch-icon" href="logo.jpg">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome (icons instead of emojis) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- AOS (scroll animations) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- Swiper (sliders) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-paw"><i class="fa-solid fa-paw"></i></div>
+</div>
+
+<!-- Top utility bar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-contact">
+      <a href="tel:+573001234567"><i class="fa-solid fa-phone"></i> +57 300 123 4567</a>
+      <a href="mailto:hola@patitasfelices.org"><i class="fa-solid fa-envelope"></i> hola@patitasfelices.org</a>
+    </div>
+    <div class="topbar-right">
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <div class="currency-wrap">
+        <i class="fa-solid fa-coins"></i>
+        <select id="currencySelect" aria-label="Seleccionar moneda">
+          <option value="COP">COP $</option>
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header / Navbar -->
+<header class="header" id="header">
+  <div class="container navbar">
+    <a href="#inicio" class="brand">
+      <img src="logo.jpg" alt="Patitas Felices" class="brand-logo">
+      <span class="brand-name">Patitas <strong>Felices</strong></span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#inicio" class="nav-link active" data-scroll>Inicio</a>
+      <a href="#nosotros" class="nav-link" data-scroll>Nosotros</a>
+      <a href="#adopcion" class="nav-link" data-scroll>Adopción</a>
+      <a href="#tienda" class="nav-link" data-scroll>Tienda</a>
+      <a href="#testimonios" class="nav-link" data-scroll>Testimonios</a>
+      <a href="#contacto" class="nav-link" data-scroll>Contacto</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#contacto" class="btn btn-cta">Dona Ahora</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <i class="fa-solid fa-paw float-icon fi-1"></i>
+  <i class="fa-solid fa-bone float-icon fi-2"></i>
+  <i class="fa-solid fa-paw float-icon fi-3"></i>
+  <i class="fa-solid fa-heart float-icon fi-4"></i>
+
+  <div class="container hero-grid">
+    <div class="hero-text" data-aos="fade-right" data-aos-duration="900">
+      <span class="eyebrow"><i class="fa-solid fa-heart-circle-check"></i> Fundación de rescate animal</span>
+      <h1>Cada Patita Merece un <span class="text-accent">Hogar</span></h1>
+      <p class="lead">Rescatamos, cuidamos y buscamos hogares responsables para perros y gatos en situación de calle. Súmate a esta misión: adopta, dona o protege una vida.</p>
+      <div class="hero-actions">
+        <a href="#adopcion" class="btn btn-cta btn-lg"><i class="fa-solid fa-paw"></i> ¡Adopta!</a>
+        <a href="#contacto" class="btn btn-outline btn-lg"><i class="fa-solid fa-hand-holding-heart"></i> Dona</a>
+      </div>
+      <div class="hero-mini-stats">
+        <div><strong data-count="540">0</strong><span>Rescates</span></div>
+        <div><strong data-count="410">0</strong><span>Adopciones</span></div>
+        <div><strong data-count="12">0</strong><span>Años</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" data-aos="fade-left" data-aos-duration="900">
+      <div class="hero-card tilt-card">
+        <img src="https://placedog.net/600/500?id=8" alt="Perro rescatado esperando adopción" loading="lazy">
+      </div>
+      <div class="floating-badge badge-flip">
+        <div class="badge-flip-inner">
+          <div class="badge-face badge-front">
+            <i class="fa-solid fa-shield-heart"></i>
+            <span>100% Protegidos</span>
+          </div>
+          <div class="badge-face badge-back">
+            <span>Vacunados, esterilizados y con seguimiento post-adopción</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#nosotros" class="scroll-cue" data-scroll aria-label="Bajar">
+    <i class="fa-solid fa-chevron-down"></i>
+  </a>
+</section>
+
+<!-- STATS -->
+<section class="stats-strip">
+  <div class="container stats-grid">
+    <div class="stat-item" data-aos="fade-up">
+      <i class="fa-solid fa-dog"></i>
+      <strong class="stat-number" data-target="540">0</strong>
+      <span>Mascotas rescatadas</span>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+      <i class="fa-solid fa-house-chimney-heart"></i>
+      <strong class="stat-number" data-target="410">0</strong>
+      <span>Adopciones exitosas</span>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+      <i class="fa-solid fa-people-group"></i>
+      <strong class="stat-number" data-target="380">0</strong>
+      <span>Familias felices</span>
+    </div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+      <i class="fa-solid fa-hand-holding-medical"></i>
+      <strong class="stat-number" data-target="1200">0</strong>
+      <span>Atenciones veterinarias</span>
+    </div>
+  </div>
+</section>
+
+<!-- NOSOTROS -->
+<section class="about" id="nosotros">
+  <div class="container about-grid">
+    <div class="about-visual" data-aos="zoom-in">
+      <img src="https://placedog.net/560/620?id=15" alt="Voluntarios cuidando mascotas" loading="lazy">
+      <div class="about-badge"><i class="fa-solid fa-award"></i> Fundación certificada</div>
+    </div>
+    <div class="about-text" data-aos="fade-left">
+      <span class="section-tag">Quiénes somos</span>
+      <h2>Protegiendo vidas, <span class="text-accent">buscando hogares</span></h2>
+      <p>En Patitas Felices trabajamos desde hace más de una década por el bienestar animal: rescate en calle, atención veterinaria, procesos de adopción responsable y educación en tenencia de mascotas.</p>
+      <ul class="about-list">
+        <li><i class="fa-solid fa-circle-check"></i> Rescate y rehabilitación</li>
+        <li><i class="fa-solid fa-circle-check"></i> Esterilización y vacunación</li>
+        <li><i class="fa-solid fa-circle-check"></i> Adopción responsable y seguimiento</li>
+        <li><i class="fa-solid fa-circle-check"></i> Educación y tenencia responsable</li>
+      </ul>
+      <a href="#contacto" class="btn btn-primary">Quiero ser voluntario <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ADOPCION SLIDER -->
+<section class="adoption" id="adopcion">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Adopción</span>
+      <h2>Mascotas esperando un <span class="text-accent">hogar</span></h2>
+      <p>Conoce a quienes ya están listos para llenar tu vida de alegría.</p>
+    </div>
+
+    <div class="swiper pets-swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="pet-card tilt-card">
+            <img src="https://placedog.net/420/320?id=3" alt="Rocky, perro en adopción" loading="lazy">
+            <span class="pet-tag">Disponible</span>
+            <div class="pet-info">
+              <h3>Rocky</h3>
+              <p><i class="fa-solid fa-dog"></i> Mestizo · 2 años · Macho</p>
+              <a href="#contacto" class="btn btn-cta btn-sm">Conocer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="pet-card tilt-card">
+            <img src="https://placekitten.com/420/320?image=2" alt="Luna, gata en adopción" loading="lazy">
+            <span class="pet-tag">Disponible</span>
+            <div class="pet-info">
+              <h3>Luna</h3>
+              <p><i class="fa-solid fa-cat"></i> Angora · 1 año · Hembra</p>
+              <a href="#contacto" class="btn btn-cta btn-sm">Conocer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="pet-card tilt-card">
+            <img src="https://placedog.net/420/320?id=6" alt="Max, perro en adopción" loading="lazy">
+            <span class="pet-tag">Urgente</span>
+            <div class="pet-info">
+              <h3>Max</h3>
+              <p><i class="fa-solid fa-dog"></i> Labrador · 4 años · Macho</p>
+              <a href="#contacto" class="btn btn-cta btn-sm">Conocer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="pet-card tilt-card">
+            <img src="https://placekitten.com/420/320?image=9" alt="Mimi, gata en adopción" loading="lazy">
+            <span class="pet-tag">Disponible</span>
+            <div class="pet-info">
+              <h3>Mimi</h3>
+              <p><i class="fa-solid fa-cat"></i> Siames · 3 años · Hembra</p>
+              <a href="#contacto" class="btn btn-cta btn-sm">Conocer más</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="pet-card tilt-card">
+            <img src="https://placedog.net/420/320?id=11" alt="Toby, perro en adopción" loading="lazy">
+            <span class="pet-tag">Disponible</span>
+            <div class="pet-info">
+              <h3>Toby</h3>
+              <p><i class="fa-solid fa-dog"></i> Beagle · 1 año · Macho</p>
+              <a href="#contacto" class="btn btn-cta btn-sm">Conocer más</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER CTA -->
+<section class="cta-banner" data-aos="zoom-in">
+  <div class="container cta-banner-inner">
+    <div>
+      <h2><i class="fa-solid fa-paw"></i> Ayúdanos a salvar más vidas</h2>
+      <p>Cada donación se traduce en alimento, vacunas y un futuro digno para un animal rescatado.</p>
+    </div>
+    <a href="#contacto" class="btn btn-white btn-lg">Quiero Donar <i class="fa-solid fa-hand-holding-heart"></i></a>
+  </div>
+</section>
+
+<!-- TIENDA SOLIDARIA -->
+<section class="shop" id="tienda">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Tienda solidaria</span>
+      <h2>Compra y <span class="text-accent">apoya la causa</span></h2>
+      <p>El 100% de las ganancias se destina al cuidado de nuestros rescatados. Precios en <span id="currencyLabel">COP</span>.</p>
+    </div>
+
+    <div class="swiper shop-swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="product-card tilt-card">
+            <span class="product-badge">-15%</span>
+            <div class="product-icon"><i class="fa-solid fa-shirt"></i></div>
+            <h3>Camiseta "Adopta"</h3>
+            <p class="price"><span class="price-value" data-cop="65000">65.000</span> <span class="price-currency">COP</span></p>
+            <div class="product-actions">
+              <a href="#" class="btn btn-cta btn-sm">Comprar Ahora</a>
+              <a href="#" class="btn btn-ghost btn-sm">Ver Producto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card tilt-card">
+            <div class="product-icon"><i class="fa-solid fa-bone"></i></div>
+            <h3>Kit Alimento Premium</h3>
+            <p class="price"><span class="price-value" data-cop="120000">120.000</span> <span class="price-currency">COP</span></p>
+            <div class="product-actions">
+              <a href="#" class="btn btn-cta btn-sm">Comprar Ahora</a>
+              <a href="#" class="btn btn-ghost btn-sm">Ver Producto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card tilt-card">
+            <span class="product-badge offer">Oferta</span>
+            <div class="product-icon"><i class="fa-solid fa-gift"></i></div>
+            <h3>Kit Bienvenida Adopción</h3>
+            <p class="price"><span class="price-value" data-cop="95000">95.000</span> <span class="price-currency">COP</span></p>
+            <div class="product-actions">
+              <a href="#" class="btn btn-cta btn-sm">Ver Oferta</a>
+              <a href="#" class="btn btn-ghost btn-sm">Ver Producto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card tilt-card">
+            <div class="product-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <h3>Mug Patitas Felices</h3>
+            <p class="price"><span class="price-value" data-cop="45000">45.000</span> <span class="price-currency">COP</span></p>
+            <div class="product-actions">
+              <a href="#" class="btn btn-cta btn-sm">Comprar Ahora</a>
+              <a href="#" class="btn btn-ghost btn-sm">Ver Producto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card tilt-card">
+            <span class="product-badge offer">Oferta</span>
+            <div class="product-icon"><i class="fa-solid fa-house-medical"></i></div>
+            <h3>Cama Ortopédica</h3>
+            <p class="price"><span class="price-value" data-cop="150000">150.000</span> <span class="price-currency">COP</span></p>
+            <div class="product-actions">
+              <a href="#" class="btn btn-cta btn-sm">Ver Oferta</a>
+              <a href="#" class="btn btn-ghost btn-sm">Ver Producto</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonials" id="testimonios">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <span class="section-tag">Testimonios</span>
+      <h2>Historias que nos <span class="text-accent">inspiran</span></h2>
+    </div>
+
+    <div class="swiper testimonials-swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"Adoptamos a Rocky hace un año y ha sido la mejor decisión de nuestra familia. El acompañamiento de la fundación fue excelente."</p>
+            <div class="testimonial-author">
+              <img src="https://placedog.net/80/80?id=20" alt="Familia adoptante">
+              <div><strong>Familia Gómez</strong><span>Bogotá</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"El proceso de adopción de Luna fue transparente y cuidadoso. Se nota el amor con el que trabajan por los animales."</p>
+            <div class="testimonial-author">
+              <img src="https://placekitten.com/80/80?image=5" alt="Adoptante">
+              <div><strong>Camila Restrepo</strong><span>Medellín</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <p>"Como voluntario he visto de cerca el impacto de la fundación. Cada peso donado realmente llega a los animales."</p>
+            <div class="testimonial-author">
+              <img src="https://placedog.net/80/80?id=25" alt="Voluntario">
+              <div><strong>Andrés Torres</strong><span>Cali</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact" id="contacto">
+  <div class="container contact-grid">
+    <div class="contact-info" data-aos="fade-right">
+      <span class="section-tag">Contacto</span>
+      <h2>Hablemos por una <span class="text-accent">buena causa</span></h2>
+      <p>¿Quieres adoptar, donar o ser voluntario? Escríbenos, con gusto te acompañamos en el proceso.</p>
+
+      <div class="info-card"><i class="fa-solid fa-location-dot"></i><div><strong>Dirección</strong><span>Calle 123 #45-67, Bogotá, Colombia</span></div></div>
+      <div class="info-card"><i class="fa-solid fa-phone"></i><div><strong>Teléfono</strong><span>+57 300 123 4567</span></div></div>
+      <div class="info-card"><i class="fa-solid fa-envelope"></i><div><strong>Correo</strong><span>hola@patitasfelices.org</span></div></div>
+      <div class="info-card"><i class="fa-solid fa-clock"></i><div><strong>Horario</strong><span>Lun - Sáb: 8:00 a.m. - 5:00 p.m.</span></div></div>
+
+      <div class="social-icons big">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" data-aos="fade-left" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nombre completo</label>
+          <input type="text" id="name" name="name" required placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="+57 300 000 0000">
+        </div>
+        <div class="form-group">
+          <label for="subject">Motivo</label>
+          <select id="subject" name="subject">
+            <option value="adopcion">Adopción</option>
+            <option value="donacion">Donación</option>
+            <option value="voluntariado">Voluntariado</option>
+            <option value="tienda">Tienda solidaria</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-cta btn-lg btn-block">
+        <span class="btn-text">Enviar Mensaje</span>
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+      <div class="form-success" id="formSuccess">
+        <i class="fa-solid fa-circle-check"></i> ¡Gracias! Tu mensaje fue enviado, te contactaremos pronto.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#inicio" class="brand">
+        <img src="logo.jpg" alt="Patitas Felices" class="brand-logo">
+        <span class="brand-name">Patitas <strong>Felices</strong></span>
+      </a>
+      <p>Protegiendo vidas y buscando hogares desde hace más de 12 años.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <a href="#inicio" data-scroll>Inicio</a>
+      <a href="#nosotros" data-scroll>Nosotros</a>
+      <a href="#adopcion" data-scroll>Adopción</a>
+      <a href="#tienda" data-scroll>Tienda</a>
+      <a href="#contacto" data-scroll>Contacto</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Ayuda</h4>
+      <a href="#">Cómo adoptar</a>
+      <a href="#">Cómo donar</a>
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#">Voluntariado</a>
+    </div>
+
+    <div class="footer-col newsletter">
+      <h4>Newsletter</h4>
+      <p>Recibe historias de adopción y campañas.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Tu correo" required aria-label="Correo para newsletter">
+        <button type="submit" aria-label="Suscribirse"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Patitas Felices. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="backToTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- CHATBOT -->
+<div class="chatbot">
+  <button class="chat-toggle" id="chatToggle" aria-label="Abrir chat">
+    <i class="fa-solid fa-comment-dots"></i>
+  </button>
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-header-title">
+        <i class="fa-solid fa-paw"></i>
+        <div><strong>Asistente Patitas</strong><span>En línea</span></div>
+      </div>
+      <button id="chatClose" aria-label="Cerrar chat"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="chat-body" id="chatBody"></div>
+    <div class="chat-quick-replies" id="chatQuickReplies"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
